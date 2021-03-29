@@ -17,13 +17,13 @@ The dataset includes the project history of Scala retrieved from Git and GitHub 
 ## The Structure of this Notebook is as Follows:
 1. Load, join and clean data.
 2. Visualize the evolution of the number of contributions of Scala.
-  - Calculate the number of pull requests submitted each month during the project's lifetime.
-  - Create a bar plot to see the trend.
+    - Calculate the number of pull requests submitted each month during the project's lifetime.
+    - Create a bar plot to see the trend.
 3. Investigate if there's a high barrier of entry by looking at the distribution of the number of pull requests submitted by each user.
-  - Plot a histogram.
-  - There are a large number of people that only contribute a small number of pull requests, indicating that the project is welcoming of new contributor.
+    - Plot a histogram.
+    - There are a large number of people that only contribute a small number of pull requests, indicating that the project is welcoming of new contributor.
 4. Identify developers who made the most pull requests to a given file.
 5. Plot the number of pull requests two specific developers submitted.
-  - `counts_wide = counts.pivot_table(index='date', columns='user', values='pid', fill_value=0)`
-  - There contribution in a given file is also plotted.
+    - `counts_wide = counts.pivot_table(index='date', columns='user', values='pid', fill_value=0)`
+    - There contribution in a given file is also plotted.
    
